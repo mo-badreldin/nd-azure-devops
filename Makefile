@@ -14,6 +14,7 @@ test_adder:
 test_hello:
 	python -m pytest -vv test_hello.py
 
+test: test_adder test_hello
+
 exec:
 	python hello.py
-all: hello install
